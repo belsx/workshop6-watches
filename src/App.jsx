@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Clock from './components/Clock';
-import './clock.css'; // Стили для стрелок
+import './clock.css';
 
 
 function App() {
