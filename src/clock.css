@@ -1,0 +1,63 @@
+.clock-app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .clocks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .clock {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .clock-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .clock-face {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    border: 2px solid #000;
+    border-radius: 50%;
+  }
+  
+  .hand {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: #000;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 50%;
+    transform: rotate(0deg);
+    transition: transform 0.05s linear;
+  }
+  
+  .hand.hour {
+    width: 40%;
+    height: 4px;
+    background: #555;
+  }
+  
+  .hand.minute {
+    background: #333;
+  }
+  
+  .hand.second {
+    background: red;
+  }
+  
