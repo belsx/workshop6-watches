@@ -14,9 +14,7 @@ const Clock = ({ id, name, offset, removeClock }) => {
   console.log(time.getTimezoneOffset());
 
   const utcTime = new Date(time.getTime() + time.getTimezoneOffset() * 60 * 1000); // Приводим текущее время к UTC
-  console.log(utcTime);
   const localTime = new Date(utcTime.getTime() + offset * 60 * 60 * 1000);
-  console.log(localTime);
 
   const hours = localTime.getHours();
   const minutes = localTime.getMinutes();
